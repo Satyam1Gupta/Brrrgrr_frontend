@@ -41,6 +41,7 @@ export default function Login({setUserAuthenticated}) {
     if(res.isSuccess){
       setSignUp(signUpInitialValue);
       alert("You have successfully registered!")
+      setIsRegister(false)
     } else{
      setError('Something went wrong, please try again later...!')
     }
